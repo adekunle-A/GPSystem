@@ -39,6 +39,6 @@
 		</dependency>
   </dependencies>
   <build>
-    <finalName>GPSystem</finalName>
+    <finalName>ROOT</finalName>
   </build>
 </project>

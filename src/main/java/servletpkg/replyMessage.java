@@ -31,7 +31,6 @@ public class replyMessage extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.sendRedirect("adminhelp.jsp");
-		//§	§doPost(request, response);
 	}//end doGet
 
 	/**

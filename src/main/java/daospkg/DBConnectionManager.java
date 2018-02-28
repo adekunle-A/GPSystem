@@ -8,9 +8,9 @@ public class DBConnectionManager {
 	 //database connection info
 	static Connection connection;
     static String driver = "com.mysql.jdbc.Driver";
-    static String url = "jdbc:mysql://localhost:3306/GPSystem";
+    static String url = "jdbc:mysql://"+"mysql"+":3306"+"/"+"GPSystem";
     static String dbuser = "root";
-    static String dbpass = "";
+    static String dbpass = "root";
     
 	public static Connection getConnection()
      {

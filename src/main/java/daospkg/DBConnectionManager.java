@@ -7,8 +7,11 @@ public class DBConnectionManager {
 	
 	 //database connection info
 	static Connection connection;
+	static String host = "mysql";
     static String driver = "com.mysql.jdbc.Driver";
-    static String url = "jdbc:mysql://"+"mysql"+":3306"+"/"+"GPSystem";
+    static int port = 3306;
+    static String DBName = "GPSystem";
+    static String url = "jdbc:mysql://"+ host +":"+ port + "/" + DBName;
     static String dbuser = "root";
     static String dbpass = "root";
     

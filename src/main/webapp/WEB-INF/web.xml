@@ -51,7 +51,7 @@
   <servlet>
   <display-name>diagnosePatient</display-name>
   	<servlet-name>diagnosePatient</servlet-name>
-  	<servlet-class>diagnosePatient</servlet-class>
+  	<servlet-class>servletpkg.diagnosePatient</servlet-class>
   </servlet>
   <servlet>
    <display-name>DisplayDocAppointment</display-name>

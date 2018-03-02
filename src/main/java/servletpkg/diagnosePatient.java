@@ -22,7 +22,6 @@ import org.apache.jena.rdf.model.ModelFactory;
 /**
  * Servlet implementation class diagnosePatient
  */
-@WebServlet("/diagnosePatient")
 public class diagnosePatient extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	String owlfile = "https://raw.githubusercontent.com/aaa90/GPSystem/master/clinicalowlfile.owl";

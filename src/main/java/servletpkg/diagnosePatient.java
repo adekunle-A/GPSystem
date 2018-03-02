@@ -30,8 +30,8 @@ public class diagnosePatient extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//response.sendRedirect("diagnosePatient.jsp");
-		doPost(request, response);
+		response.sendRedirect("diagnosePatient.jsp");
+		//doPost(request, response);
 	}//end doGet
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)

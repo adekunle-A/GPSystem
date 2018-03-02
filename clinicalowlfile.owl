@@ -1,0 +1,341 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#hasSymptoms -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#hasSymptoms">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#isLocatedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES">
+        <rdfs:comment>This class contains instances of diseases</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF">
+        <rdfs:comment>This is the class that has instance of body parts</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS">
+        <rdfs:comment>This class contains intances of diseases symptoms</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#blood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#blood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Asthma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Asthma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Coughing"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Wheezing"/>
+        <untitled-ontology-3:isLocatedIn rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Lungs"/>
+        <rdfs:comment>Asthma can be controlled by taking medicine and avoiding the triggers that can cause an attack</rdfs:comment>
+        <rdfs:label xml:lang="en">asthma</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Bleeding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Bleeding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bleeding</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Brain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Brain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#BrainCancer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#BrainCancer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Fatigue"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Headache"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Seizures"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Vomitting"/>
+        <untitled-ontology-3:isLocatedIn rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Brain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Chest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Chest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chest</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Coughing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Coughing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coughing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Diarrhea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Diarrhea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diarrhea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Ebola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Ebola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Diarrhea"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Fever"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Headache"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Vomitting"/>
+        <untitled-ontology-3:isLocatedIn rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#blood"/>
+        <rdfs:comment>Ebola, previously known as Ebola hemorrhagic fever, is a rare and deadly disease caused by infection with one of the Ebola virus species.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ebola</rdfs:label>
+    </owl:NamedIndividual>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Ebola"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+        <owl:annotatedTarget rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;Ebola, previously known as Ebola hemorrhagic fever, is a rare and deadly disease caused by infection with one of the Ebola virus species.&quot;</rdfs:comment>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Epilepsy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Epilepsy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Seizures"/>
+        <untitled-ontology-3:isLocatedIn rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Brain"/>
+        <rdfs:comment>Epilepsy is a broad term used for a brain disorder that causes seizures</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">epilepsy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Fatigue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Fatigue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fatigue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Fever -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Fever">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fever</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Flu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Flu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Fever"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Headache"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Temperature"/>
+        <untitled-ontology-3:isLocatedIn rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Lungs"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Influenza (flu) is a contagious respiratory illness caused by influenza viruses. It can cause mild to severe illness. Serious outcomes of flu infection can result in hospitalization or death. Some people, such as older people, young children, and people with certain health conditions, are at high risk of serious flu complications</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Hand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Hand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Headache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Headache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Heart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Heart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Heart_Disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Heart_Disease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#DISEASES"/>
+        <untitled-ontology-3:hasSymptoms rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Headache"/>
+        <untitled-ontology-3:isLocatedIn rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Heart"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term &quot;heart disease&quot; refers to several types of heart conditions. The most common type of heart disease in the United States is coronary artery disease, which affects the blood flow to the heart</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">heart disease</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Legs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Legs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Lungs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Lungs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Mouth_sores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Mouth_sores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Neck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Neck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Seizures -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Seizures">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Stomach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Stomach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#PARTOF"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Temperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Vomitting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Vomitting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Wheezing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#Wheezing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/akintunde/ontologies/2017/7/untitled-ontology-3#SYMPTOMS"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -126,7 +126,6 @@
   <servlet>
    <display-name>UpdateDocAvailability</display-name>
   	<servlet-name>UpdateDocAvailability</servlet-name>
-  	
   	<servlet-class>servletpkg.UpdateDocAvailability</servlet-class>
   </servlet>
   <servlet>
@@ -171,7 +170,7 @@
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>BookAppointment</servlet-name>
-  	<url-pattern>/BookAppointment</url-pattern>
+  	<url-pattern>/bookAppointment</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>CancelAppointment</servlet-name>
@@ -215,7 +214,7 @@
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>ManageAppointment</servlet-name>
-  	<url-pattern>/ManageAppointment</url-pattern>
+  	<url-pattern>/ManageAppointments</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>PatientHelp</servlet-name>
@@ -227,7 +226,7 @@
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>ProfileInformation</servlet-name>
-  	<url-pattern>/ProfileInformation</url-pattern>
+  	<url-pattern>/patientDashboard</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>RegistrationServlet</servlet-name>
@@ -235,7 +234,7 @@
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>RemoveDoctor</servlet-name>
-  	<url-pattern>/RemoveDoctor</url-pattern>
+  	<url-pattern>/removeDoctor</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
   	<servlet-name>replyMessage</servlet-name>

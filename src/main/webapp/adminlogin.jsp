@@ -63,7 +63,7 @@
 										<div class="row">
 											<div class="col-lg-12">
 												<div class="text-center">
-													<a href="forgotPass" tabindex="5" class="forgot-password">Forgot Password?</a>
+													<a href="mailto:admin@le.ac.uk?Subject=Password%20Reset" tabindex="5" class="forgot-password">Forgot Password?</a>
 												</div>
 											</div>
 										</div>

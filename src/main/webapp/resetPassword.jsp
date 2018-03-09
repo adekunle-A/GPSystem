@@ -49,7 +49,7 @@ $(document).ready(function() {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="adminDashboard">GP</a>
+      <a class="navbar-brand" href="adminDashboard.jsp">GP</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">

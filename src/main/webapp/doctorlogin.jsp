@@ -33,7 +33,7 @@
 					<div class="panel-heading">
 						<div class="row">
 							<div class="col-xs-6">
-								<a href="doctorlogin" class="active" id="login-form-link">Doctor's Login</a>
+								<a href="doctorlogin.jsp" class="active" id="login-form-link">Doctor's Login</a>
 							</div>
 						</div>
 						<hr>

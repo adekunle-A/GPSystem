@@ -11,6 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel='stylesheet' href='stylesheets/style.css' />
+  <script type="text/javascript" src="javascripts/RegistrationScripts.js"></script>
 </head>
 <!-- Navbar -->
 <nav class="navbar navbar-default">
@@ -26,33 +27,6 @@
   </div>
 </nav>
 <body>
-<script>
- $(document).ready(function() { 
-	$('#registerForm').on('submit', function(e) {
-    	e.preventDefault();
-    var username = $("#username").val();
-    var fname = $("#fname").val();
-    var lname = $("#lname").val();
-    var email = $("#email").val();
-    var address = $("#address").val();
-    var phone = $("#phone").val();
-    var password = $("#password").val();
-    var confirmpassword = $("#password2").val();
-    var dob = $("#dob").val();
-    var gender = $('input[name=gender]:checked').val();
-    $.ajax({
-        url:'RegistrationServlet',
-        data:{username:username,fname:fname,lname:lname,email:email,address:address,phone:phone,password:password,confirmpassword:confirmpassword,dob:dob,gender:gender},
-        type:'POST',
-        success:function(data){ 
-        		$(".status").html(data);
-        },error:function(){
-          alert('error');
-        }
-     });
-    });
-}); 
-</script>
 <div class="container pcontainer">
     	<div class="row " style="margin-top:60px">
 			<div class="col-md-6 col-md-offset-3">

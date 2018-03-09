@@ -33,7 +33,7 @@
 					<div class="panel-heading">
 						<div class="row">
 							<div class="col-xs-6">
-								<a href="adminlogin" class="active" id="login-form-link">Admin's Login</a>
+								<a href="adminlogin.jsp" class="active" id="login-form-link">Admin's Login</a>
 							</div>
 						</div>
 						<hr>

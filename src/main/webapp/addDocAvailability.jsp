@@ -5,15 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Doctor Dashboard</title>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
-        <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
      <!--    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
-        <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
        <link rel='stylesheet' href='stylesheets/style2.css' />
        <script type="text/javascript" src="javascripts/scripts.js"></script>
 
@@ -41,33 +38,6 @@
         <li><a href="ViewAppointment.jsp">View Appointments</a></li>
         <li><a href="checkPatientHistory.jsp">checkPatientHistory</a></li>
         <li><a href="UpdateAvailability.jsp">Update Availability</a></li>
-        <li><a href="addDiagnosisInfo.jsp">Add DiagnosisInfo</a></li>
-        <li><a href="diagnosePatient.jsp">Diagnose Patient</a></li>
-         <li><a href="updatePrescription.jsp">update Prescription</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="Logout"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="addDocAvailability.jsp">GP</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="doctorsDashboard.jsp">Profile</a></li>
-        <li><a href="addDocAvailability.jsp">Add Availability</a></li>
-        <li><a href="ViewAppointment.jsp">View Appointments</a></li>
-        <li><a href="checkPatientHistory.jsp">checkPatientHistory</a></li>
-        <li  class="active"><a href="UpdateAvailability.jsp">Update Availability</a></li>
         <li><a href="addDiagnosisInfo.jsp">Add DiagnosisInfo</a></li>
         <li><a href="diagnosePatient.jsp">Diagnose Patient</a></li>
          <li><a href="updatePrescription.jsp">update Prescription</a></li>

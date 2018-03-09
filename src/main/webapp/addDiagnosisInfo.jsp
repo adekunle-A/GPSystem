@@ -32,33 +32,6 @@
   }
 %>
 
-<!-- <script>
-
-$(document).ready(function() {   
-	$('#symptoms').tokenfield();
-    $( "#addDiagnosisbtn" ).on( "click", function(e) {
-    		e.preventDefault();
-        var bookingid = $("#patientid").val();
-        var docid = $("#docid").val();
-        var appdate = $("#appdate").val();
-        var symptoms = $("#symptoms").val();
-        var disease = $("#disease").val();
-        var treatment = $("#treatment").val();
-        var status = $('#status').find(":selected").text();
-    $.ajax({
-        url:'addDiagnosisInfo',
-        data:{docid:docid,bookingid:bookingid,appdate:appdate,symptoms:symptoms,disease:disease,treatment:treatment,status:status},
-        type:'POST',
-        success:function(data){ 
-          	 alert(data);
-        	  $('.status').html(data);
-        },error:function(){
-          alert('error');
-        }
-     });
-    });
-});
-</script> -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -77,33 +50,6 @@ $(document).ready(function() {
         <li><a href="checkPatientHistory.jsp">checkPatientHistory</a></li>
         <li><a href="UpdateAvailability.jsp">Update Availability</a></li>
         <li  class="active"><a href="addDiagnosisInfo.jsp">Add DiagnosisInfo</a></li>
-        <li><a href="diagnosePatient.jsp">Diagnose Patient</a></li>
-         <li><a href="updatePrescription.jsp">update Prescription</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="Logout"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="addDocAvailability.jsp">GP</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="doctorsDashboard.jsp">Profile</a></li>
-        <li><a href="addDocAvailability.jsp">Add Availability</a></li>
-        <li><a href="ViewAppointment.jsp">View Appointments</a></li>
-        <li><a href="checkPatientHistory.jsp">checkPatientHistory</a></li>
-        <li  class="active"><a href="UpdateAvailability.jsp">Update Availability</a></li>
-        <li><a href="addDiagnosisInfo.jsp">Add DiagnosisInfo</a></li>
         <li><a href="diagnosePatient.jsp">Diagnose Patient</a></li>
          <li><a href="updatePrescription.jsp">update Prescription</a></li>
       </ul>

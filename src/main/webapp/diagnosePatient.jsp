@@ -58,6 +58,33 @@
     </div>
   </div>
 </nav>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="addDocAvailability.jsp">GP</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="doctorsDashboard.jsp">Profile</a></li>
+        <li><a href="addDocAvailability.jsp">Add Availability</a></li>
+        <li><a href="ViewAppointment.jsp">View Appointments</a></li>
+        <li><a href="checkPatientHistory.jsp">checkPatientHistory</a></li>
+        <li  class="active"><a href="UpdateAvailability.jsp">Update Availability</a></li>
+        <li><a href="addDiagnosisInfo.jsp">Add DiagnosisInfo</a></li>
+        <li><a href="diagnosePatient.jsp">Diagnose Patient</a></li>
+         <li><a href="updatePrescription.jsp">update Prescription</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Logout"><span class="glyphicon glyphicon-log-in"></span> LogOut</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <div class="container pcontainer">
       <div class="row " style="margin-top:60px">
       <div class="col-md-8 col-md-offset-2">
